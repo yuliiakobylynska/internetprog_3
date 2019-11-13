@@ -1,0 +1,378 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	width: 100%;
+	background-color: white;
+	font-family: 'Tahoma';
+	color: rgb(102 128 144);
+}
+header{ 
+	background-color: rgb(242 243 245);
+	height: 210px;
+}
+
+.header-nav{
+	padding: 0;
+	max-width: 1170px;
+	width: 900px;
+	height: 210px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	margin: auto;
+}
+
+.header-nav > label{
+	display: inline-block;
+	text-align: center;
+	height: 110px;
+	width: 300px;
+	float: left;
+}
+
+.header-nav > label:hover{
+	background-color: rgb(245 247 250);
+	cursor: pointer;
+}
+
+.header-nav > label + label {
+	border-left: 1px solid rgb(204 216 216);
+}
+
+.header-nav i{
+	font-size: 50px;
+	height: 52px;
+	margin: auto;
+	margin-top: 8px;
+}
+
+.header-nav input[type="radio"]:checked + i{
+	color: rgb(16 224 48);
+}
+
+.header-nav p{
+	font-size: 16px;
+	line-height: 60px;
+	vertical-align: bottom;
+	height: 52px;
+	margin: auto;
+	margin-bottom: 8px;
+}
+
+.header-nav input[type="radio"]:checked + i + p{
+	color: black;
+}
+
+main{
+	height: 930px;
+}
+
+main h1{
+	color: black;
+}
+
+article{
+	height: 930px;
+	width: 1170px;
+	margin: auto;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+section{
+	height: 830px;
+	width: 690px;
+	float: left;
+}
+
+section form{
+	width: 100%;
+	border: 3px solid rgb(235 239 240);
+	border-radius: 3px;
+	padding-bottom: 60px;
+}
+
+section form label{
+	background-color: rgb(235 239 240);
+	padding: 40px;
+	display: inline-block;
+	width: 100%;
+	height: 160px;
+}
+
+section form label:hover{
+	cursor: pointer;
+}
+
+section form input[type="radio"]{
+	background-color: white;
+	-webkit-appearance: none;
+	appearance: none;
+	position: absolute;
+	margin-top: 40px;
+	margin-left: 40px;
+	height: 20px;
+	width: 20px;
+	border: 2px solid rgb(102 128 144);
+	border-radius: 10px;
+}
+
+section form input[type="radio"]:checked{
+	border: 6px solid rgb(16 224 48);
+}
+
+.payment-caption{
+	display: inline-block;
+	padding-left: 40px;
+	width: 100%;
+	height: 25px;
+	line-height: 25px;
+	vertical-align: middle;
+}
+
+section h4{
+	margin: 0;
+	float: left;
+}
+
+.payment-images{
+	margin: 0;
+	float: right;
+}
+
+section img{
+	height: 25px;
+	display: inline;
+	float: right;
+	border-radius: 3px;
+	margin-left: 5px;
+}
+
+section form label p{
+	font-size: 14px;
+	margin-left: 40px;
+	margin-right: 200px;
+}
+
+section form input[type="radio"]:checked + label{
+	background-color: white;
+}
+
+section form hr{
+	border: none;
+	height: 1px;
+	margin-top: 0;
+	margin-left: 40px;
+	margin-right: 40px;
+	background-color: rgb(235 239 240);
+}
+
+.inputs{
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+section h5{
+	color: black;
+	margin-bottom: 10px;
+	margin-right: 40px;
+}
+
+section form input[type="text"]{
+	width: 100%;
+	height: 48px;
+	line-height: 48px;
+	vertical-align: middle;
+	padding-left: 20px;
+	font-size: 18px;
+	border: 1px solid rgb(210 218 220);
+	border-radius: 6px;
+}
+
+section form input[type="text"]:valid{
+	border: 1px solid rgb(16 224 48);
+	background-color: rgb(244 253 248);
+}
+
+form .fa{
+	font-size: 18px;
+	vertical-align: middle;
+	color: rgb(16 224 48);
+}
+
+form .fa-check-circle{
+	position: absolute;
+	height: 48px;
+	line-height: 48px;
+	margin-left: 566px;
+	font-size: 24px;
+	margin-top: -48px;
+	visibility: hidden;
+}
+
+form .fa-credit-card{
+	position: absolute;
+	font-size: 24px;
+	margin-left: -36px;
+	height: 48px;
+	line-height: 48px;
+	color: rgb(210 218 220);
+}
+
+form .fa-question-circle{
+	cursor: help;
+}
+
+input[type="text"]:valid + .fa-check-circle{
+	visibility: visible;
+}
+
+input[type="text"]:valid + .fa-credit-card{
+	color: rgb(16 224 48);
+}
+
+.input-container{
+	margin: 0;
+	display: inline-block;
+	width: 278px;
+}
+
+.input-container + .input-container{
+	margin-left: 40px;
+}
+
+aside{
+	color: black;
+	height: 830px;
+	width: 390px;
+	float: right;
+}
+
+aside h1{
+	margin-bottom: 40px;
+}
+
+aside p, aside span{
+	font-size: 14px;
+}
+
+aside hr{
+	border: none;
+	height: 1px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	background-color: rgb(210 218 220);
+}
+
+.aside-line{
+	height: 36px;
+}
+
+.-right{
+	float: right;
+	text-align: right;
+}
+
+.-left{
+	float: left;
+	text-align: left;
+}
+
+.hr-bold{
+	margin-top: 16px;
+	height: 3px;
+}
+
+aside a{
+	color: rgb(16 224 48);
+	line-height: 24px;
+	vertical-align: middle;
+}
+
+.-green{
+	color: rgb(16 224 48);
+	font-size: 24px;
+	line-height: 24px;
+	vertical-align: middle;
+	font-weight: bold;
+}
+
+.ads-containers{
+	margin-top: 50px;
+	background-color: rgb(242 243 245);
+	height: 300px;
+	padding: 40px;
+	color: rgb(102 128 144);
+}
+
+.ad i{
+	float: left;
+	font-size: 40px;
+	height: 40px;
+}
+
+.ad h5{
+	margin-top: 0;
+}
+
+.ad p{
+	margin-bottom: 40px;
+}
+
+.ad h5, .ad p{
+	margin-left: 80px;
+}
+
+footer{
+	height: 140px;
+	width: 1170px;
+	margin: auto;
+	border-top: 1px solid rgb(217 226 225);
+}
+
+footer button{
+	cursor: pointer;
+	display: inline-block;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	height: 60px;
+	text-align: center;
+	border-radius: 30px;
+	vertical-align: middle;
+	font-size: 16px;
+	line-height: 60px;
+}
+
+footer p{
+	display: inline-block;
+	width: 700px;
+	text-align: right;
+	margin-top: 46px;
+	margin-bottom: 46px;
+	height: 60px;
+}
+
+.button-back{
+	width: 190px;
+	color: rgb(106 119 138);
+	border: 1px solid rgb(106 119 138);
+	background-color: white;
+	float: left;
+}
+
+.button-check{
+	width: 250px;
+	border: 1px solid rgb(17 199 89);
+	background-color: rgb(17 199 89);
+	color: white;
+	float: right;
+}
+
+.button-check i{
+	margin: 12px;
+	height: 30px;
+	font-size: 30px;
+	line-height: 30px;
+	vertical-align: middle;
+}

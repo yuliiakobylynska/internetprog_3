@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LB2_v1</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<nav class="header-nav">
+			<label>
+				<input type="radio" name="radio-nav" hidden>
+				<i class="fa fa-cogs"></i>
+				<p>1. Streamer configuration</p>
+			</label>
+			<label>
+				<input type="radio" name="radio-nav" hidden>
+				<i class="fa fa-user"></i>
+				<p>2. Your personal detainls</p>
+			</label>
+			<label>
+				<input type="radio" name="radio-nav" hidden checked>
+				<i class="fa fa-credit-card"></i>
+				<p>3. Payment method</p>
+			</label>
+		</nav>
+	</header>
+	
+	<main>
+		<article>
+			<section>
+				<h1>Choose your payment method</h1>
+				<form>
+					<input id="1" type="radio" name="payment-method" checked>
+					<label for="1">
+						<div class="payment-caption">
+							<h4>PayPal</h4>
+							<div class="payment-images">
+								<img src="images/PayPal.svg.png">
+							</div>
+						</div>
+						<p>Safe payment online. Credit card needen. PayPal accoint is not necessary.</p>
+					</label>
+					<input id="2" type="radio" name="payment-method" checked>
+					<label for="2">
+						<div class="payment-caption">
+							<h4>Credit Card</h4>
+							<div class="images">
+								<img src="images/visa.png">
+								<img src="images/MasterCard.png">
+								<img src="images/Discover.jpg">
+								<img src="images/AmericanExpress.jpg">
+							</div>
+						</div>
+						<p>Safe money transder using your bank account.<br>
+						Visa, maestro, discoverm american express.</p>
+					</label>
+					<hr>
+					<div class="inputs">
+						<h5>CREDIT CARD NUMBER</h5>
+						<input type="text" name="CreditCardNumber" maxlength="19" placeholder="XXXX XXXX XXXX XXXX" pattern="\d{4}\s\d{4}\s\d{4}\s\d{4}" required>
+						<i class="fa fa-check-circle"></i>
+						<div class="input-container">
+							<h5>CVV CODE <i class="fa fa-question-circle"></i></h5>
+							<input type="text" name="CVVCODE" maxlength="3" pattern="\d{3}" required>
+							<i class="fa fa-credit-card"></i>
+						</div>
+						<div class="input-container">
+							<h5>EXPIRY DATE</h5>
+							<input type="text" name="DATE" maxlength="7" placeholder="MM / YY" pattern="[0-3]{1}\d{1}\s/\s\d{2}" required>
+						</div>
+						<h5>NAME ON CARD</h5>
+						<input type="text" name="NameOnCard" pattern="[A-Za-z]{3,}\s[A-Za-z]{3,}">
+					</div>
+				</form>
+			</section>
+
+			<aside>
+				<h1>Summary</h1>
+				<p>Packet: <b>Full package (100+ channels)</b></p>
+				<p>Duration: <b>3m.</b></p>
+				<hr>
+				<div class="aside-line">
+					<span class="-left">Translation:</span>
+					<span class="-right">€ 159.99</span>
+				</div>
+				<div class="aside-line">
+					<span class="-left">Discount for points:</span>
+					<span class="-right">€ 0.00</span>
+				</div>
+				<div class="aside-line">
+					<span class="-left">Gift card discount:</span>
+					<span class="-right">€ 0.00</span>
+				</div>
+				<hr class="hr-bold">
+				<div class="aside-line">
+					<a href="" class="-left">Have a discount code?</a>
+					<span class="-right -green">€ 159.99</span>
+				</div>
+				<div class="ads-containers">
+					<div class="ad">
+						<i class="fa fa-box"></i>
+						<h5>Streaming box shipping information</h5>
+						<p>Lorem ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web.</p>
+					</div>
+					<div class="ad">
+						<i class="fa fa-wallet"></i>
+						<h5>30 days money back guarantee</h5>
+						<p>Contrary to popular belief, Lorem Ipsum is not simply random.</p>
+					</div>
+				</div>
+			</aside>
+		</article>
+	</main>
+
+	<footer>
+		<button class="button-back">GO BACK</button>
+		<p>by clicking check out button you agree with our<br>terms and conditions and money back guranatee. Thank you for trusting our service.</p>
+		<button class="button-check">CHECK OUT<i class="fa fa-arrow-right -right"></i></button>
+	</footer>
+</body>
+</html>
